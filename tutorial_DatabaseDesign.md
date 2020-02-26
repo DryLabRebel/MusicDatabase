@@ -24,8 +24,17 @@ When all attributes are atomic, i.e., not nested.
 I think I kind of get this, but yeah. When you have nested categories
 (like say, sub-genres, inside of genres?, or albums, nested into artists?)
 
+- second normal form
+
+All attributes are atomic AND contains no partial dependencies
+
+- third normal form
+
+All attributes are atomic AND contains no partial dependencies AND no transitive dependencies
+
+Take home: no redundancy, each new piece of information has its own table, with its own foreign key
+
 - I suppose they're should be a way to use foreign keys to link song titles to artists, and albums from other tables.
-- So I shou
 
 Not nested?
 

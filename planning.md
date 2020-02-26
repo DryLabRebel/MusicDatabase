@@ -59,3 +59,16 @@ Note: Here, album can have an ID that's unique only within the artist
     artist    album genre subgenre
 
 Or something like that.
+
+Or, maybe artist ID, should be my primary key!
+
+    artistID    artist  albumID
+
+    albumID album
+
+    albumID trackID
+
+    trackID track   length  rating
+
+    genre?
+
