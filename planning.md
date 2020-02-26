@@ -36,12 +36,26 @@ The purpose is to catalogue my music collection in a meaningful way.
 
 - I could have a primary table:
 
-        ID  track_no track artist  album disk length  rating  file_location date_added  date_updated
+        ID  track artist  album disk track_no length  rating  file_location date_added  date_updated
+
+*NO* - this is bad. I need to *normalise* this idea.
+
+Song Table:
+
+        ID track length rating file_location date_added date_updated
+
+Artist table:
+
+        ID artist
+
+Album table
+
+        artist album
+
+Note: Here, album can have an ID that's unique only within the artist
 
 - Then other useful tables
 
         artist  album genre subgenre
 
 Or something like that.
-
-
