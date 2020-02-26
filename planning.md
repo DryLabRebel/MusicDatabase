@@ -28,34 +28,34 @@ The purpose is to catalogue my music collection in a meaningful way.
 ### Primary Keys ###
 
 - song + artist + album? - this would ensure that any song that appeared under the same artist, on the same album would be a duplicate, and I could remove it
-  - this is assuming that different versions of the same song are identified (live, acoustic, explicit, etc.)
-  - I could specify the recording format separately? Some songs might have multiple formats (live AND explicit?)
-  - I could have separate columns formatA, formatB, formatC?
+    - this is assuming that different versions of the same song are identified (live, acoustic, explicit, etc.)
+    - I could specify the recording format separately? Some songs might have multiple formats (live AND explicit?)
+    - I could have separate columns formatA, formatB, formatC?
 - I think in that case it might be easier to just have a unique ID number for each song?
-  - This could be a code based on `artist_album_disk_trackNO` something like XXXX-XXX-X-XX
+    - This could be a code based on `artist_album_disk_trackNO` something like XXXX-XXX-X-XX
 
 - I could have a primary table:
 
-        ID  track artist  album disk track_no length  rating  file_location date_added  date_updated
+    ID    track artist    album disk track_no length    rating    file_location date_added    date_updated
 
 *NO* - this is bad. I need to *normalise* this idea.
 
 Song Table:
 
-        ID track length rating file_location date_added date_updated
+    ID track length rating file_location date_added date_updated
 
 Artist table:
 
-        ID artist
+    ID artist
 
 Album table
 
-        artist album
+    artist album
 
 Note: Here, album can have an ID that's unique only within the artist
 
 - Then other useful tables
 
-        artist  album genre subgenre
+    artist    album genre subgenre
 
 Or something like that.
