@@ -2,6 +2,7 @@ Principles of Relational Database Design
 ----------------------------------------
 
 1. No redundancy - a single column goes into only one table!
+
   - except for foreign keys, they are the only exception - because they're used to join tables
 
 2. No bad dependancies
