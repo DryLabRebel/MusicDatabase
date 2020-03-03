@@ -36,13 +36,13 @@ The purpose is to catalogue my music collection in a meaningful way.
 
 - I could have a primary table:
 
-    ID    track artist    album disk track_no length    rating    file_location date_added    date_updated
+    ID    track artist    album disk track_no length    rating    file_location filename	date_added    date_updated
 
 *NO* - this is bad. I need to *normalise* this idea.
 
 Song Table:
 
-    ID track length rating file_location date_added date_updated
+    ID track length rating file_location filename	date_added date_updated
 
 Artist table:
 
@@ -62,17 +62,12 @@ Or something like that.
 
 Or, maybe artist ID, should be my primary key!
 
-    artistID    artist  albumID
-
-    albumID album
-
-    albumID track_no   track
-
-    trackID length  rating  date_added  
-
-    artistID  genre
-
-    genre subgenre
+    table1	artistID	artist	albumID
+    table2	albumID	album	releast_year
+    table3	albumID	track_no	trackID
+    table4	trackID	title	composer	length	rating	filename	date_added	
+    table5	artistID	genre
+    table6	genre	subgenre
 
 ***OK, now we're getting somewhere***
 
