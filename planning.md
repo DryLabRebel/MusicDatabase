@@ -66,9 +66,20 @@ Or, maybe artist ID, should be my primary key!
 
     albumID album
 
-    albumID trackID
+    albumID track_no   track
 
-    trackID track   length  rating
+    trackID length  rating  date_added  
 
-    genre?
+    artistID  genre
+
+    genre subgenre
+
+***OK, now we're getting somewhere***
+
+How do I turn this into a Datbase? Done.
+
+Where is all the information for my Music library?
+  - How do I find and access the metadata for my Music library?
+
+    mdls path/to/filename
 
