@@ -33,3 +33,12 @@ I can then either
 - save all the information as .txt dataframes - then use SQL to add these tables to my music database?
 - feed this into a SQL script which automatically adds/updates the information to the relevant tables
 
+How would I even start?
+
+- Learn some python?
+- Just get started?
+
+
+
+
+
