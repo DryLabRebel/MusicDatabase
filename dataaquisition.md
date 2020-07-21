@@ -38,7 +38,8 @@ How would I even start?
 - Learn some python?
 - Just get started?
 
-
+*I need to learn some SQL*
+*I need to learn some python*
 
 
 

@@ -9,8 +9,6 @@ I want to create a database to catalogue my music collection, in a way that forc
 
 I can probably even run some basic statistical analyses on my data as well
 
-- Some linear modelling and other simple analyses
-
 Database design
 ---------------
 
