@@ -34,7 +34,7 @@ All attributes are atomic AND contains no partial dependencies AND no transitive
 
 Take home: no redundancy, each new piece of information has its own table, with its own foreign key
 
-- I suppose they're should be a way to use foreign keys to link song titles to artists, and albums from other tables.
+- I suppose there should be a way to use foreign keys to link song titles to artists, and albums from other tables.
 
 Not nested?
 

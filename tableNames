@@ -1,5 +1,5 @@
 table1	artistID	artist	albumID
-table2	albumID	album	releast_year
+table2	albumID	album	release_year
 table3	albumID	track_no	trackID
 table4	trackID	title	composer	length	rating	filename	date_added	
 table5	artistID	genre
