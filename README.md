@@ -1,7 +1,7 @@
 A repo for my Music Database project
 ====================================
 
-Keeping music organised on a computer is one of those love/hate things,
+Keeping music organised on a computer is one of those love/hate things.
 
 It's fun, and always good to enjoy your music, but can be notoriously difficult when you have
 multiple formats, styles and duplicate songs to deal with.

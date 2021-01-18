@@ -11,7 +11,15 @@ These are my primary and secondary keys:
 
 How do I find and access the metadata for my Music library?
 
+Bash:
+
     mdls path/to/filename
+
+Python:
+
+    ???
+
+Could I pipe the bash command into a python scipt which parses the information and feeds it into an SQL script, which automatically updates a database?
 
 What do I want to do now?
 
@@ -41,5 +49,75 @@ How would I even start?
 *I need to learn some SQL*
 *I need to learn some python*
 
+Here's a great stack question to get you started:
 
+        https://stackoverflow.com/questions/8948/accessing-mp3-metadata-with-python
+
+OK, so there's `eyeD3` and `mutagen`. Apparently both python libraries (packages?), both parse metadata.
+
+What am I thinking about?
+
+- mdls doesn't give me all the info I'm looking for. It's more system info.
+
+Example:
+
+    /Users/geoff/Music/iTunes/iTunes Media/Music/Ahrix/Nova - Single/01 Nova.m4a
+    kMDItemAlbum                           = "Nova - Single"
+    kMDItemAlternateNames                  = (
+        "01 Nova.m4a"
+    )
+    kMDItemAudioBitRate                    = 262669
+    kMDItemAudioChannelCount               = 2
+    kMDItemAudioSampleRate                 = 44100
+    kMDItemAudioTrackNumber                = 1
+    kMDItemAuthors                         = (
+        Ahrix
+    )
+    kMDItemContentCreationDate             = 2018-05-11 22:56:07 +0000
+    kMDItemContentCreationDate_Ranking     = 2018-05-11 00:00:00 +0000
+    kMDItemContentModificationDate         = 2020-03-02 03:32:02 +0000
+    kMDItemContentModificationDate_Ranking = 2020-03-02 00:00:00 +0000
+    kMDItemContentType                     = "com.apple.m4a-audio"
+    kMDItemContentTypeTree                 = (
+        "com.apple.m4a-audio",
+        "public.mpeg-4-audio",
+        "public.audio",
+        "public.audiovisual-content",
+        "public.data",
+        "public.item",
+        "public.content"
+    )
+    kMDItemCopyright                       = "℗ 2017 Ahrix"
+    kMDItemDateAdded                       = 2018-05-11 22:56:12 +0000
+    kMDItemDateAdded_Ranking               = 2018-05-11 00:00:00 +0000
+    kMDItemDisplayName                     = "Nova"
+    kMDItemDocumentIdentifier              = 0
+    kMDItemDurationSeconds                 = 281.32589569161
+    kMDItemFSContentChangeDate             = 2020-03-02 03:32:02 +0000
+    kMDItemFSCreationDate                  = 2018-05-11 22:56:07 +0000
+    kMDItemFSCreatorCode                   = "hook"
+    kMDItemFSFinderFlags                   = 0
+    kMDItemFSHasCustomIcon                 = (null)
+    kMDItemFSInvisible                     = 0
+    kMDItemFSIsExtensionHidden             = 0
+    kMDItemFSIsStationery                  = (null)
+    kMDItemFSLabel                         = 0
+    kMDItemFSName                          = "01 Nova.m4a"
+    kMDItemFSNodeCount                     = (null)
+    kMDItemFSOwnerGroupID                  = 20
+    kMDItemFSOwnerUserID                   = 501
+    kMDItemFSSize                          = 9847512
+    kMDItemFSTypeCode                      = ""
+    kMDItemInterestingDate_Ranking         = 2020-03-02 00:00:00 +0000
+    kMDItemKind                            = "Apple MPEG-4 audio"
+    kMDItemLogicalSize                     = 9847512
+    kMDItemMediaTypes                      = (
+        Sound
+    )
+    kMDItemMusicalGenre                    = "Dance"
+    kMDItemPhysicalSize                    = 10502144
+    kMDItemPurchaseDate                    = 2018-05-11 12:56:07 +0000
+    kMDItemRecordingYear                   = 2013
+    kMDItemTitle                           = "Nova"
+    kMDItemTotalBitRate                    = 262669
 
