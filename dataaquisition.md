@@ -57,6 +57,14 @@ OK, so there's `eyeD3` and `mutagen`. Apparently both python libraries (packages
 
 What am I thinking about?
 
+Here's what I need:
+
+    artist, album, release_year, track_no, title, composer, length, rating, filename, date_added, genre, subgenre
+
+Could get away with:
+
+    artist, album, release_year, track_no, title, length, filename, date_added, genre
+
 - mdls doesn't give me all the info I'm looking for. It's more system info.
 
 Example:
