@@ -129,3 +129,9 @@ Example:
     kMDItemTitle                           = "Nova"
     kMDItemTotalBitRate                    = 262669
 
+---
+
+I need to re-remember where my actual database has been stored (or can I just invoke it from the commandline?) - remember how to do this.
+
+
+
