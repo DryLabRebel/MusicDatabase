@@ -27,6 +27,8 @@ Start building my tables?
 
 How? If I want to reinforce some of the most basic SQL commands, I could go through one at a time and just start adding song info by hand... seriously?
 
+OK - not a bad idea actually. Would be the easiest way to get started. But I also want to work on my python/aquisition skills
+
 Otherwise I could write a simple (simple?) python or bash (or perl, or awk) script which mines my Music directory for all the information I need, and automatically fills tables according to my specifications?
 
 Oh man, I don't even know where to start.
@@ -59,11 +61,28 @@ What am I thinking about?
 
 Here's what I need:
 
+    table1	artistID	artist	albumID
+    table2	albumID	album	releast_year
+    table3	albumID	track_no	trackID
+    table4	trackID	title	composer	length	rating	filename	date_added	
+    table5	artistID	genre
+    table6	genre	subgenre
+
     artist, album, release_year, track_no, title, composer, length, rating, filename, date_added, genre, subgenre
 
 Could get away with:
 
-    artist, album, release_year, track_no, title, length, filename, date_added, genre
+*Check* (15-03-2021) - artist
+*Check* (15-03-2021) - album
+*Check* (15-03-2021) - release_year
+*Check* (15-03-2021) - track_no
+*Check* (15-03-2021) - title
+*Check* (15-03-2021) - length
+*Check* (15-03-2021) - filename
+*Check* (15-03-2021) - date_added
+*Check* (15-03-2021) - genre
+
+Awesome all the info I need (in theory) is in the data below.
 
 - mdls doesn't give me all the info I'm looking for. It's more system info.
 
@@ -131,7 +150,29 @@ Example:
 
 ---
 
-I need to re-remember where my actual database has been stored (or can I just invoke it from the commandline?) - remember how to do this.
+OK, so...
 
+I need to:
+
+- just go through, one by one, inserting text into tables with SQL commands, until I want to beat my head against the wall, then...
+
+- either use bash to access the data
+  - maybe save it into a temp text file
+  - use python to mine the text and pull out the necessary info
+
+OR
+
+- find the code, to use python, to access and extract the appropriate meta data directly
+  - figure out how to use python to autofill SQL queries, to fill up my database automatically
+  - make this executable
+  - maybe, make it so that it can check whether the data already exists in my database
+    - then if it doesn't, add the new data
+  - so that I can execute everytime I purchase new music, and it will update my database
+  - set this script up to periodically check for new data, and update my tables accordingly?
+
+Once I have a good SQL database, I can start looking at the data
+
+- do some simple data summaries
+- make some simple visuals
 
 

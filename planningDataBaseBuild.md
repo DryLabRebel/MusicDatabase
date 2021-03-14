@@ -21,7 +21,9 @@ From [NTU](https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Databas
 
 ### Define the purpose ###
 
-The purpose is to catalogue my music collection in a meaningful way.
+The purpose is to catalogue my music collection in a meaningful way. Also, ideally, it would be done in such a way that updating and correcting errors in the information would be a cinch.
+
+If I got real fancy, perhaps I could eventually design a script which mined web music databases searching for music info, and could notify me of possible errors in my collection?
 
 ### Primary Keys ###
 
@@ -74,5 +76,11 @@ How do I turn this into a Datbase? Done.
 Where is all the information for my Music library?
   - How do I find and access the metadata for my Music library?
 
-    mdls path/to/filename
+    mdls path/to/filename # bash
+
+
+
+
+
+
 

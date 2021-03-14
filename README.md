@@ -1,14 +1,28 @@
 A repo for my Music Database project
 ====================================
 
-Keeping music organised on a computer is one of those love/hate things.
+I want to build a database of the information for my music collection, with the specific goal of:
 
-It's fun, and always good to enjoy your music, but can be notoriously difficult when you have
-multiple formats, styles and duplicate songs to deal with.
-Not to mention the glory days of Limewire, leaving you with scores of tracks with the wrong name, missing information, the wrong artists, or inconsistently spelled artist names.
-And don't even get me started on the Genres!
+- practical application of data science techinques
+  - SQL
+  - python
+  - database design
+  - Jupyter?
+    - Could I learn GUI Jupyter?
 
-This repo is primarly a showcase for my portfolio, but hopefully, if I do it well,
-it will make for a halfway decent attempt to catalogue and finally organise my music collection once and for all.
+Related to that, other stuff that I need to get more comforatble with
+
+SQL databases
+  - opening, logging in, queries etc
+
+Python
+  - Jupyter notebook
+  - Anaconda/conda environments
+  - running python code on the command line
+  - running python within vim - or integrating vim with a python command interpreter
+
+Data Aquisition
+  - Accessing and gathering meta-data from my music files
+
 
 
