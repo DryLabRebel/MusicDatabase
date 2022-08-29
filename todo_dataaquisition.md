@@ -10,10 +10,11 @@ I need to:
   - how to list existing databases?
   - or just how to access my music database, and view all tables? (there was some stuff on how to do this in the SQL course)
 
-
 2. either use bash to access the data
   - maybe save it into a temp text file
   - use python to mine the text and pull out the necessary info
+
+Before I do either of these - I need to fix my python problem. According to [this](https://stackoverflow.com/questions/65348841/anaconda-install-on-mac-big-sur-python-cannot-be-opened) stack question, I need to remove and reinstall problem python directories/programs. Or, more simply, update all my python stuff for big sur, and to work with latest conda installs.
 
 OR...
 

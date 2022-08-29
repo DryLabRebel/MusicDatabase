@@ -7,8 +7,6 @@ I want to build a database of the information for my music collection, with the 
   - SQL
   - python
   - database design
-  - Jupyter?
-    - Could I learn GUI Jupyter?
 
 Related to that, other stuff that I need to get more comforatble with
 

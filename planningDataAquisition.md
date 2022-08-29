@@ -82,8 +82,6 @@ Could get away with:
 *Check* (15-03-2021) - date_added
 *Check* (15-03-2021) - genre
 
-Awesome all the info I need (in theory) is in the data below.
-
 - mdls doesn't give me all the info I'm looking for. It's more system info.
 
 Example:
@@ -150,29 +148,25 @@ Example:
 
 ---
 
-OK, so...
+It has enough... enough for now.
 
-I need to:
+Also I found this:
 
-- just go through, one by one, inserting text into tables with SQL commands, until I want to beat my head against the wall, then...
+    import os
 
-- either use bash to access the data
-  - maybe save it into a temp text file
-  - use python to mine the text and pull out the necessary info
+    #print(os.stat(os.path.join("/Users/geoff/Music/iTunes/iTunes Media/Music/Ahrix/Nova - Single/", "01 Nova.m4a")))
 
-OR
+    import subprocess
 
-- find the code, to use python, to access and extract the appropriate meta data directly
-  - figure out how to use python to autofill SQL queries, to fill up my database automatically
-  - make this executable
-  - maybe, make it so that it can check whether the data already exists in my database
-    - then if it doesn't, add the new data
-  - so that I can execute everytime I purchase new music, and it will update my database
-  - set this script up to periodically check for new data, and update my tables accordingly?
+    filename = "/Users/geoff/Music/iTunes/iTunes Media/Music/Calvin Harris/Motion/06 Outside (feat. Ellie Goulding).m4a"
 
-Once I have a good SQL database, I can start looking at the data
+    p = subprocess.run(["mdls", filename], capture_output=True, text=True)
 
-- do some simple data summaries
-- make some simple visuals
+    print(p.stdout)
 
+Ooooooh!!
+
+It's just calling bash commands from a python script, but if I had just resorted to bash, that's what I would've done anyway.
+
+This is probably also very general, and may allow me to do other fancy bash stuff in python!
 
