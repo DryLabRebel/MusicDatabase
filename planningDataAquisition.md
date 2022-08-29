@@ -170,3 +170,10 @@ It's just calling bash commands from a python script, but if I had just resorted
 
 This is probably also very general, and may allow me to do other fancy bash stuff in python!
 
+Even better is tinytag - a python package with reads file meta data. Bingo!!
+
+Now what?
+
+
+
+
